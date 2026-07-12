@@ -17,6 +17,7 @@ COUNT ?= 1
 	destroy-new-service \
 	destroy-scale-service \
 	destroy-blue-green \
+	security-check \
 	destroy-all
 
 build-push:
@@ -68,3 +69,6 @@ destroy-blue-green:
 
 destroy-all:
 	./scripts/destroy-all.sh
+
+security-check: 
+	./scripts/security-check.sh
