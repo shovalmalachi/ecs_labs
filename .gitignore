@@ -70,3 +70,8 @@ Thumbs.db
 task-definition-*.json
 appspec-*.json
 revision*.zip
+
+# Local Terraform secrets
+*.secret.tfvars
+*.secret.auto.tfvars
+secrets.auto.tfvars

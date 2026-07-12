@@ -124,13 +124,16 @@ terraform fmt -recursive
 The repository intentionally **does not contain**:
 
 - AWS credentials
-- Access keys
+- AWS access keys
 - Secrets
 - Passwords
 - Private keys
 
-Terraform state files, provider directories and generated deployment artifacts are excluded from Git.
+The committed `terraform.tfvars` files contain **non-sensitive lab configuration only** (resource names, regions, image tags, CPU, memory, etc.).
 
+**Never store credentials, passwords, tokens, private keys, or any other sensitive information in `terraform.tfvars` or any other file committed to this repository.**
+
+Terraform state files (`*.tfstate`), provider directories (`.terraform/`), and generated deployment artifacts are excluded from Git.
 ---
 
 # Project Highlights
