@@ -10,15 +10,15 @@ The project is designed around independent infrastructure labs, reusable Terrafo
 
 ```text
 ecs_lab/
-├── app/                    # Sample Node.js application
+├── app/                    
 │
 ├── infra/
-│   ├── modules/            # Reusable Terraform modules
-│   └── labs/               # Independent Terraform labs
+│   ├── modules/           
+│   └── labs/               
 │
 ├── scripts/
-│   ├── lib/                # Shared Bash functions
-│   └── *.sh                # Workflow scripts
+│   ├── lib/                
+│   └── *.sh               
 │
 ├── Makefile
 └── README.md
