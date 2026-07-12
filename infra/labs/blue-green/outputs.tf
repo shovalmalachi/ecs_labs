@@ -29,3 +29,11 @@ output "codedeploy_application_name" {
 output "codedeploy_deployment_group_name" {
   value = module.codedeploy.deployment_group_name
 }
+
+output "container_name" {
+  value = var.container_name
+}
+
+output "container_port" {
+  value = var.container_port
+}

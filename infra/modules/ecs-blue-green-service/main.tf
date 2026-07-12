@@ -66,10 +66,16 @@ resource "aws_ecs_task_definition" "this" {
         protocol      = "tcp"
       }]
 
-      environment = [{
-        name  = "VERSION"
-        value = var.image_tag
-      }]
+      environment = [
+  {
+    name  = "SERVICE_NAME"
+    value = var.service_name
+  },
+  {
+    name  = "VERSION"
+    value = var.image_tag
+  }
+]
 
       logConfiguration = {
         logDriver = "awslogs"

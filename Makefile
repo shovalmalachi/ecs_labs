@@ -9,7 +9,8 @@ COUNT ?= 1
 	shared-image \
 	new-service \
 	scale \
-	blue-green \
+	blue-green-deploy \
+	blue-green-infra \
 	destroy-build-push \
 	destroy-deploy-image \
 	destroy-shared-image \
@@ -33,7 +34,10 @@ new-service:
 scale:
 	./scripts/scale-service.sh "$(COUNT)" "$(TAG)"
 
-blue-green:
+blue-green-infra:
+	./scripts/deploy-blue-green-infra.sh "$(TAG)"
+
+blue-green-deploy:
 	./scripts/blue-green.sh "$(TAG)"
 
 destroy-build-push:

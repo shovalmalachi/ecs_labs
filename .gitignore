@@ -65,3 +65,8 @@ Thumbs.db
 *.tar
 *.tar.gz
 
+# Generated deployment files
+.generated/
+task-definition-*.json
+appspec-*.json
+revision*.zip
